@@ -3,10 +3,6 @@ name: deploy-container
 on:
   workflow_dispatch
 
-defaults:
-  run:
-    working-directory: container
-
 jobs:
   build:
     runs-on: ubuntu-latest
