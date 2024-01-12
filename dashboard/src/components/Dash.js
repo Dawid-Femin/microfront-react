@@ -1,9 +1,12 @@
 import React from 'react';
+import {Box} from "@mui/material";
 
 const Dash = () => {
-    return(
+    return (
         <>
-            <h1>Dasboard</h1>
+            <Box flex={10} p={2} sx={{display: {xs: 'none', md: 'block'}}}>
+                <h1>Dashboard will be here xd</h1>
+            </Box>
         </>
     )
 }
