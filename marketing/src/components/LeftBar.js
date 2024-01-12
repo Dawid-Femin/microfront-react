@@ -24,7 +24,7 @@ const LeftBar = () => {
                                         <ListItemIcon>
                                             <HomeRoundedIcon/>
                                         </ListItemIcon>
-                                        <ListItemText primary="Home"/>
+                                        <ListItemText primary="Dashboard"/>
                                     </ListItemButton>
                                 </ListItem>
                             </Link>
