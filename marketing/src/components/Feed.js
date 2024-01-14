@@ -9,7 +9,7 @@ const Feed = () => {
     useEffect(() => {
         const fetchAllPosts = async () => {
             try {
-                const res = await axios.get('http://localhost:8800/posts');
+                const res = await axios.get('http://dawidfemin.atthost24.pl/posts');
                 setPosts(res.data);
             } catch (err) {
                 console.log(err);
