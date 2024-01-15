@@ -1,12 +1,11 @@
 import React from 'react';
 import {Box, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/material";
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import DashboardCustomizeRoundedIcon from '@mui/icons-material/DashboardCustomizeRounded';
 import {Link} from "react-router-dom";
 
-const LeftBar = () => {
+const Menu = () => {
     return (
         <>
             <Box flex={2} p={2} sx={{display: {xs: 'none', md: 'block'}}}>
@@ -19,7 +18,7 @@ const LeftBar = () => {
                                         <ListItemIcon>
                                             <HomeRoundedIcon/>
                                         </ListItemIcon>
-                                        <ListItemText primary="Home"/>
+                                        <ListItemText primary="Homepage"/>
                                     </ListItemButton>
                                 </ListItem>
                             </Link>
@@ -29,25 +28,20 @@ const LeftBar = () => {
                                         <ListItemIcon>
                                             <DashboardCustomizeRoundedIcon/>
                                         </ListItemIcon>
-                                        <ListItemText primary="Dashboard"/>
+                                        <ListItemText primary="General"/>
                                     </ListItemButton>
                                 </ListItem>
                             </Link>
-                        </List>
-                    </nav>
-                    <Divider/>
-                    <nav aria-label="secondary mailbox folders">
-                        <List>
-                            <ListItem disablePadding>
-                                <ListItemButton>
-                                    <ListItemText primary="Trash"/>
-                                </ListItemButton>
-                            </ListItem>
-                            <ListItem disablePadding>
-                                <ListItemButton component="a" href="#simple-list">
-                                    <ListItemText primary="Spam"/>
-                                </ListItemButton>
-                            </ListItem>
+                            <Link to='/dashboard/posts'>
+                                <ListItem disablePadding>
+                                    <ListItemButton>
+                                        <ListItemIcon>
+                                            <DashboardCustomizeRoundedIcon/>
+                                        </ListItemIcon>
+                                        <ListItemText primary="Posts"/>
+                                    </ListItemButton>
+                                </ListItem>
+                            </Link>
                         </List>
                     </nav>
                 </Box>
@@ -55,4 +49,5 @@ const LeftBar = () => {
         </>
     )
 }
-export default LeftBar;
+
+export default Menu;

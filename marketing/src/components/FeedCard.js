@@ -3,7 +3,6 @@ import {styled} from '@mui/material/styles';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import {red} from '@mui/material/colors';
 //CARD
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -26,12 +25,12 @@ const ExpandMore = styled((props) => {
     }),
 }));
 
-export default function RecipeReviewCard() {
+export default function RecipeReviewCard({createdAt, title, des, img}) {
     return (
         <Card style={{marginBottom: '50px'}}>
             <CardHeader
                 avatar={
-                    <Avatar sx={{bgcolor: red[500]}} aria-label="recipe">
+                    <Avatar sx={{bgcolor: 'red'}} aria-label="recipe">
                         R
                     </Avatar>
                 }
@@ -40,20 +39,18 @@ export default function RecipeReviewCard() {
                         <MoreVertIcon/>
                     </IconButton>
                 }
-                title="Shrimp and Chorizo Paella"
-                subheader="September 14, 2016"
+                title={title}
+                subheader={createdAt}
             />
             <CardMedia
                 component="img"
                 height="450"
-                image="https://source.unsplash.com/random"
+                image={img}
                 alt="image"
             />
             <CardContent>
                 <Typography variant="body2" color="text.secondary">
-                    This impressive paella is a perfect party dish and a fun meal to cook
-                    together with your guests. Add 1 cup of frozen peas along with the mussels,
-                    if you like.
+                    {des}
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
