@@ -15,7 +15,7 @@ export default function PostsTable() {
     useEffect(() => {
         const fetchAllPosts = async () => {
             try {
-                const res = await axios.get('http://localhost:8800/posts');
+                const res = await axios.get('http://dawidfemin.atthost24.pl/posts');
                 setPosts(res.data);
             } catch (err) {
                 console.log(err);
@@ -35,6 +35,7 @@ export default function PostsTable() {
                             <TableCell align="left">Author</TableCell>
                             <TableCell align="left">Description</TableCell>
                             <TableCell align="left">Image</TableCell>
+                            <TableCell align="left">Actions</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -48,6 +49,7 @@ export default function PostsTable() {
                                 <TableCell align="left">{author}</TableCell>
                                 <TableCell align="left">{title}</TableCell>
                                 <TableCell align="left">{title}</TableCell>
+                                <TableCell align="left">E D</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>

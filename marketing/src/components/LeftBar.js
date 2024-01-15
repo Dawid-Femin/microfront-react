@@ -3,11 +3,6 @@ import {Box, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/ma
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
-import ForumRoundedIcon from '@mui/icons-material/ForumRounded';
-import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
-import SettingsSuggestRoundedIcon from '@mui/icons-material/SettingsSuggestRounded';
-import StoreRoundedIcon from '@mui/icons-material/StoreRounded';
-import GroupRoundedIcon from '@mui/icons-material/GroupRounded';
 import DashboardCustomizeRoundedIcon from '@mui/icons-material/DashboardCustomizeRounded';
 import {Link} from "react-router-dom";
 
@@ -24,7 +19,7 @@ const LeftBar = () => {
                                         <ListItemIcon>
                                             <HomeRoundedIcon/>
                                         </ListItemIcon>
-                                        <ListItemText primary="Dashboard"/>
+                                        <ListItemText primary="Home"/>
                                     </ListItemButton>
                                 </ListItem>
                             </Link>
@@ -35,56 +30,6 @@ const LeftBar = () => {
                                             <DashboardCustomizeRoundedIcon/>
                                         </ListItemIcon>
                                         <ListItemText primary="Dashboard"/>
-                                    </ListItemButton>
-                                </ListItem>
-                            </Link>
-                            <Link to='/messenger'>
-                                <ListItem disablePadding>
-                                    <ListItemButton>
-                                        <ListItemIcon>
-                                            <ForumRoundedIcon/>
-                                        </ListItemIcon>
-                                        <ListItemText primary="Messages"/>
-                                    </ListItemButton>
-                                </ListItem>
-                            </Link>
-                            <Link to='/groups'>
-                                <ListItem disablePadding>
-                                    <ListItemButton>
-                                        <ListItemIcon>
-                                            <GroupRoundedIcon/>
-                                        </ListItemIcon>
-                                        <ListItemText primary="Groups"/>
-                                    </ListItemButton>
-                                </ListItem>
-                            </Link>
-                            <Link to='/marketplace'>
-                                <ListItem disablePadding>
-                                    <ListItemButton>
-                                        <ListItemIcon>
-                                            <StoreRoundedIcon/>
-                                        </ListItemIcon>
-                                        <ListItemText primary="Marketplace"/>
-                                    </ListItemButton>
-                                </ListItem>
-                            </Link>
-                            <Link to='/profile'>
-                                <ListItem disablePadding>
-                                    <ListItemButton>
-                                        <ListItemIcon>
-                                            <AccountCircleRoundedIcon/>
-                                        </ListItemIcon>
-                                        <ListItemText primary="Profile"/>
-                                    </ListItemButton>
-                                </ListItem>
-                            </Link>
-                            <Link to='/settings'>
-                                <ListItem disablePadding>
-                                    <ListItemButton>
-                                        <ListItemIcon>
-                                            <SettingsSuggestRoundedIcon/>
-                                        </ListItemIcon>
-                                        <ListItemText primary="Settings"/>
                                     </ListItemButton>
                                 </ListItem>
                             </Link>

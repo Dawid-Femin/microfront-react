@@ -1,10 +1,10 @@
 import React, {lazy, Suspense, useState} from 'react';
-import Header from "../components/Header";
+import Header from "./components/Header";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import {LinearProgress, createGenerateClassName, StylesProvider} from "@material-ui/core";
 
-const MarketingLazy = lazy(() => import('../components/Marketing'));
-const AuthLazy = lazy(() => import('../components/Auth'));
+const MarketingLazy = lazy(() => import('./components/Marketing'));
+const AuthLazy = lazy(() => import('./components/Auth'));
 
 const generateClassName = createGenerateClassName({
     productionPrefix: 'co',
