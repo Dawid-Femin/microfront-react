@@ -1,5 +1,5 @@
 import React, {lazy, Suspense, useState} from 'react';
-import Header from "../src/components/Header";
+import Header from './components/Header';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import {LinearProgress, createGenerateClassName, StylesProvider} from "@material-ui/core";
 
